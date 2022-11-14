@@ -9,7 +9,12 @@ import SwiftUI
 
 @main
 struct NotesApp: App {
+
+    @State var notes: ObservableArray<Note> = ObservableArray(array: [])
+
     var body: some Scene {
-        WindowGroup {}
+        WindowGroup {
+            AddNoteView().environmentObject(notes)
+        }
     }
 }
