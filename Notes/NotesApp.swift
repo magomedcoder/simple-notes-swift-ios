@@ -14,7 +14,7 @@ struct NotesApp: App {
 
     var body: some Scene {
         WindowGroup {
-            AddNoteView().environmentObject(notes)
+            ListView().environmentObject(notes)
         }
     }
 }

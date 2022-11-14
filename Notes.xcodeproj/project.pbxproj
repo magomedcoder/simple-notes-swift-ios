@@ -10,6 +10,11 @@
 		FD43F3432922D69C008F59DD /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD43F3422922D69C008F59DD /* NotesApp.swift */; };
 		FD43F3472922D69E008F59DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD43F3462922D69E008F59DD /* Assets.xcassets */; };
 		FD43F34A2922D69E008F59DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD43F3492922D69E008F59DD /* Preview Assets.xcassets */; };
+		FD839B902922E708008E6865 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD839B8F2922E708008E6865 /* ListView.swift */; };
+		FD839B922922E72F008E6865 /* DetailNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD839B912922E72F008E6865 /* DetailNoteView.swift */; };
+		FD839B942922E747008E6865 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD839B932922E747008E6865 /* AddNoteView.swift */; };
+		FD839B962922E77A008E6865 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD839B952922E77A008E6865 /* Model.swift */; };
+		FD839B9B2922ED90008E6865 /* CustomTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD839B9A2922ED90008E6865 /* CustomTextEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +22,11 @@
 		FD43F3422922D69C008F59DD /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
 		FD43F3462922D69E008F59DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD43F3492922D69E008F59DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD839B8F2922E708008E6865 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		FD839B912922E72F008E6865 /* DetailNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNoteView.swift; sourceTree = "<group>"; };
+		FD839B932922E747008E6865 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
+		FD839B952922E77A008E6865 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FD839B9A2922ED90008E6865 /* CustomTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +59,10 @@
 		FD43F3412922D69C008F59DD /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				FD839B9C2922F009008E6865 /* Components */,
+				FD839B992922E9F8008E6865 /* View */,
 				FD43F3422922D69C008F59DD /* NotesApp.swift */,
+				FD839B952922E77A008E6865 /* Model.swift */,
 				FD43F3462922D69E008F59DD /* Assets.xcassets */,
 				FD43F3482922D69E008F59DD /* Preview Content */,
 			);
@@ -62,6 +75,24 @@
 				FD43F3492922D69E008F59DD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD839B992922E9F8008E6865 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD839B932922E747008E6865 /* AddNoteView.swift */,
+				FD839B8F2922E708008E6865 /* ListView.swift */,
+				FD839B912922E72F008E6865 /* DetailNoteView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD839B9C2922F009008E6865 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FD839B9A2922ED90008E6865 /* CustomTextEditor.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD839B9B2922ED90008E6865 /* CustomTextEditor.swift in Sources */,
+				FD839B962922E77A008E6865 /* Model.swift in Sources */,
+				FD839B902922E708008E6865 /* ListView.swift in Sources */,
+				FD839B922922E72F008E6865 /* DetailNoteView.swift in Sources */,
+				FD839B942922E747008E6865 /* AddNoteView.swift in Sources */,
 				FD43F3432922D69C008F59DD /* NotesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +306,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +338,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
